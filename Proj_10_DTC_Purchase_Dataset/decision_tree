@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Age &le; 44.5<br/>gini = 0.47<br/>samples = 320<br/>value = [199, 121]<br/>class = No>, fillcolor="#f5ceb1"] ;
+1 [label=<Salary &le; 90500.0<br/>gini = 0.311<br/>samples = 228<br/>value = [184, 44]<br/>class = No>, fillcolor="#eb9f68"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<Age &le; 36.5<br/>gini = 0.082<br/>samples = 186<br/>value = [178, 8]<br/>class = No>, fillcolor="#e68742"] ;
+1 -> 2 ;
+3 [label=<gini = 0.0<br/>samples = 120<br/>value = [120, 0]<br/>class = No>, fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label=<gini = 0.213<br/>samples = 66<br/>value = [58, 8]<br/>class = No>, fillcolor="#e99254"] ;
+2 -> 4 ;
+5 [label=<Age &le; 26.5<br/>gini = 0.245<br/>samples = 42<br/>value = [6, 36]<br/>class = Yes>, fillcolor="#5aade9"] ;
+1 -> 5 ;
+6 [label=<gini = 0.0<br/>samples = 1<br/>value = [1, 0]<br/>class = No>, fillcolor="#e58139"] ;
+5 -> 6 ;
+7 [label=<gini = 0.214<br/>samples = 41<br/>value = [5, 36]<br/>class = Yes>, fillcolor="#54abe9"] ;
+5 -> 7 ;
+8 [label=<Salary &le; 41500.0<br/>gini = 0.273<br/>samples = 92<br/>value = [15, 77]<br/>class = Yes>, fillcolor="#60b0ea"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<Salary &le; 22500.0<br/>gini = 0.059<br/>samples = 33<br/>value = [1, 32]<br/>class = Yes>, fillcolor="#3fa0e6"] ;
+8 -> 9 ;
+10 [label=<gini = 0.32<br/>samples = 5<br/>value = [1, 4]<br/>class = Yes>, fillcolor="#6ab6ec"] ;
+9 -> 10 ;
+11 [label=<gini = 0.0<br/>samples = 28<br/>value = [0, 28]<br/>class = Yes>, fillcolor="#399de5"] ;
+9 -> 11 ;
+12 [label=<Salary &le; 85500.0<br/>gini = 0.362<br/>samples = 59<br/>value = [14, 45]<br/>class = Yes>, fillcolor="#77bbed"] ;
+8 -> 12 ;
+13 [label=<gini = 0.48<br/>samples = 25<br/>value = [10, 15]<br/>class = Yes>, fillcolor="#bddef6"] ;
+12 -> 13 ;
+14 [label=<gini = 0.208<br/>samples = 34<br/>value = [4, 30]<br/>class = Yes>, fillcolor="#53aae8"] ;
+12 -> 14 ;
+}
